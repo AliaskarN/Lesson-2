@@ -7,12 +7,89 @@
 
                             //  Решение
 
-Console.WriteLine("Введите трехзначное число");
-int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите трехзначное число");
+// int a = Convert.ToInt32(Console.ReadLine());
 
-if(a > 99 && a < 1000)
-{
-    int a1 = a % 100 / 10;
-    Console.WriteLine($"Второе число - {a1}");
-} 
-else Console.WriteLine("неверное число!");
+// if(a > 99 && a < 1000)
+// {
+//     int a1 = a % 100 / 10;
+//     Console.WriteLine($"Второе число - {a1}");
+// } 
+// else Console.WriteLine("неверное число!");
+
+
+﻿// Задача 13: Напишите программу, которая выводит третью цифру 
+//заданного числа или сообщает, что третьей цифры нет.
+
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+
+// Console.Write("Введите любое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write($"{a} третья цифра: ");
+
+// if (a < 0) {
+//    a *= -1;
+//    }
+// if (a <= 99 && a >= -99) {
+//    Console.Write("третьей цифры нет");
+// }
+// else {
+//    while (a >= 999) {
+//       a /= 10;
+//    }
+//    a = a % 10;
+//    Console.WriteLine(a);
+// }
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
+// и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+// решение через массив и проверки
+
+// string[] day = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+// Console.Write("Укажите номер дня недели: ");
+// int weakDay = Convert.ToInt32(Console.ReadLine());
+
+// if (weakDay > 0 && weakDay < 8)
+// {
+//     if (weakDay > 5)
+//     {
+//         for (int x = 0; x < day.Length; x++)
+//         {
+//             if (x + 1 == weakDay)
+//             {
+//                 Console.Write($"День недели выходной");
+                
+//             }
+//         }
+//     }
+//     else
+//     {
+//         Console.Write($"День недели не выходной");
+//     }
+
+// }
+// else{
+//     Console.Write($"Недопустимое значение");
+// }
+
+// //упрощенное решение без массива, без всего
+
+// Console.Write("Укажите номер дня недели: ");
+// int weakDay1 = Convert.ToInt32(Console.ReadLine());
+
+// if (weakDay1 > 0 && weakDay1 < 8){
+//     if(weakDay1 > 5){
+//         Console.Write("День недели выходной");
+//     }
+//     else Console.Write("День недели не выходной");
+// }
+// else Console.Write("Недопустимое значение");
